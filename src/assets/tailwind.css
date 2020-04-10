@@ -1,0 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+/* Place between before utilities so you can still layer utility components on top */
+/* .btn {
+  @apply inline-block px-5 py-3 rounded-lg text-sm uppercase tracking-wider font-semibold;
+} */
+
+@tailwind utilities;
