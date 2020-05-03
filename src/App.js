@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import SearchBar from './components/SearchBar';
-import SearchResults from './components/SearchResults';
+import Header from './components/header.js';
+import SearchBar from './components/searchBar.js';
+import SearchResults from './components/searchResults.js';
 
 function App() {
   return (
