@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="h-screen font-sans">
       <div className="m-4 h-full flex justify-center py-4">
-        <div className="text-center sm:w-full">
+        <div className="text-center sm:w-full md:w-3/4 max-w-3xl">
           <Header title="GitHub User Search"/>
           <SearchBar placeholderText="Enter a username to search" />
           <SearchResults 
