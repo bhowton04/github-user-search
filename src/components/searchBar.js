@@ -16,7 +16,10 @@ const SearchBar = ({ placeholderText, execute, setUserName }) => {
         placeholder={placeholderText}
         onChange={(e) => setUserName(e.target.value)}
       />
-      <button className="flex-none px-4 py-2 rounded-md bg-indigo-600 text-white">
+      <button
+        className="flex-none px-4 py-2 rounded-md bg-indigo-600 text-white"
+        type="submit"
+      >
         Search
       </button>
     </form>

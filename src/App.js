@@ -31,12 +31,10 @@ function App() {
       username,
     },
   });
-  // console.log(username);
-  // console.log("error: ", error);
-  // console.log("data: ", data);
+  console.log("loading: ", loading);
+  console.log("error: ", error);
+  console.log("data: ", data);
 
-  // if (loading || loading === null) return <p>Loading...</p>;
-  // if (error) return <p>Error :(</p>;
   const userCards =
     data &&
     data.search.edges.length > 0 &&
@@ -66,6 +64,8 @@ function App() {
             execute={execute}
             setUserName={setUserName}
           />
+          {loading && <p>Loading...</p>}
+          {error && <p>Error :(</p>}
           {userCards}
         </div>
       </div>
